@@ -1,0 +1,27 @@
+{
+  "name": "Fungal Eruption",
+  "level": 4,
+  "school": "Conjuration",
+  "castingTime": "1 action",
+  "range": "60 feet",
+  "components": "V, S, M (a handful of rotting mushrooms)",
+  "duration": "Concentration, up to 1 minute",
+  "description": "You cause a violent fungal explosion in a 10-foot radius sphere at a point you choose. Each creature in the area must make a Dexterity saving throw. On a failure: They take 4d8 necrotic damage as rotting spores burst from beneath their skin. If a creature dies from this, it immediately rises as an undead under your control. The area becomes heavily obscured, as thick, toxic spores linger until the spell ends.",
+  "damage": {
+    "type": "Necrotic",
+    "dice": "4d8",
+    "save": "Dexterity"
+  },
+  "area": {
+    "shape": "Sphere",
+    "radius": 10
+  },
+  "effects": [
+    {
+      "condition": "Heavily Obscured"
+    },
+    {
+      "undeadRising": true
+    }
+  ]
+}
